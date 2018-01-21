@@ -7,22 +7,23 @@
 
 				<!-- Header -->
 					<header id="header">
-						<a href="index.html" class="logo">DynaMIT Board</a>
+						<a href="index.html" class="logo">The People Who Make It Happen</a>
 					</header>
 
 				<!-- Nav -->
 					<nav id="nav">
 						<ul class="links">
 							<li><a href="{{url_for('index') }}">Home</a></li>
+							<li><a href="{{ url_for('about')  }}">About</a></li>
 							<li  class="active"><a href="{{  url_for('generic')  }}">Board</a></li>
 							<li><a href="{{ url_for('elements')  }}">Donate</a></li>
-							<li><a href="{{ url_for('about')  }}">About</a></li>
+							
 							<li><a href="{{ url_for('apply')  }}">Apply</a></li>
 						</ul>
 						<ul class="icons">
-							<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-							<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-							<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+							<!--li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li-->
+							<li><a href="https://www.facebook.com/dynamitnonprofit/" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+							<!--li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li-->
 							<li><a href="https://github.com/MIT-dynaMIT" class="icon fa-github"><span class="label">GitHub</span></a></li>
 						</ul>
 					</nav>
@@ -52,9 +53,6 @@
 									</header>
 									<a href="#" class="image fit"><img src="{{url_for('static', filename='images/nan.jpg')}}" alt="" /></a>
 									<p>Nan is a junior studying mathematics. She is the co-director of dynaMIT and is responsible for overseeing the entire program.</p>
-									<ul class="actions">
-										<li><a href="#" class="button">Learn About Us!</a></li>
-									</ul>
 								</article>
 								<article>
 									<header>
@@ -64,9 +62,6 @@
 									</header>
 									<a href="#" class="image fit"><img src="{{url_for('static', filename='images/kelvin.jpg')}}" alt="" /></a>
 									<p>Kelvin is a junior studying EECS. He is the co-director of dynaMIT and is responsible for overseeing the entire program.</p>
-									<ul class="actions">
-										<li><a href="#" class="button">Apply for DynaMIT!</a></li>
-									</ul>
 								</article>
 								<article>
 									<header>
@@ -75,9 +70,6 @@
 									</header>
 									<a href="#" class="image fit"><img src="{{url_for('static', filename='images/tianye.jpg')}}" alt="" /></a>
 									<p>Tianye is a senior studying EECS. She is the director emeritus of dynaMIT and advises the program based on her many years of experience in the organization.</p>
-									<ul class="actions">
-										<li><a href="#" class="button">Become a Mentor!</a></li>
-									</ul>
 								</article>
 								<article>
 									<header>
@@ -86,9 +78,6 @@
 									</header>
 									<a href="#" class="image fit"><img src="{{url_for('static', filename='images/lordique.jpg')}}" alt="" /></a>
 									<p>Lordique is a senior studying computer science. She is the director emeritus and advises the program based on her many years of experience in the organization.</p>
-									<ul class="actions">
-										<li><a href="#" class="button">Apply for Board!</a></li>
-									</ul>
 								</article>
 								<article>
 									<header>
@@ -98,9 +87,6 @@
 									</header>
 									<a href="#" class="image fit"><img src="{{url_for('static', filename='images/aman.jpg')}}" alt="" /></a>
 									<p>Aman is a sophomore studying computer science and molecular biology. He is the liason between dynaMIT and the MIT administration.</p>
-									<ul class="actions">
-										<li><a href="#" class="button">Full Story</a></li>
-									</ul>
 								</article>
 								<article>
 									<header>
@@ -110,9 +96,6 @@
 									</header>
 									<a href="#" class="image fit"><img src="{{url_for('static', filename='images/carolyn.jpg')}}" alt="" /></a>
 									<p>Carolyn is a sophomore studying material science. She is responsible for dynaMIT's finances.</p>
-									<ul class="actions">
-										<li><a href="#" class="button">Full Story</a></li>
-									</ul>
 								</article>
 								<article>
 									<header>
@@ -122,9 +105,6 @@
 									</header>
 									<a href="#" class="image fit"><img src="{{url_for('static', filename='images/sid.jpg')}}" alt="" /></a>
 									<p>Siddarth is a senior studying biological engineering and biology. He helps plan dynaMIT's curriculum.</p>
-									<ul class="actions">
-										<li><a href="#" class="button">Full Story</a></li>
-									</ul>
 								</article>
 								<article>
 									<header>
@@ -134,9 +114,6 @@
 									</header>
 									<a href="#" class="image fit"><img src="{{url_for('static', filename='images/yonah.jpg')}}" alt="" /></a>
 									<p>Yonah is a senior studying mathematics. He helps plan dynaMIT's social activites as well as its curriculum.</p>
-									<ul class="actions">
-										<li><a href="#" class="button">Full Story</a></li>
-									</ul>
 								</article>
 								<article>
 									<header>
@@ -146,9 +123,6 @@
 									</header>
 									<a href="#" class="image fit"><img src="{{url_for('static', filename='images/rebecca.jpg')}}" alt="" /></a>
 									<p>Rebecca is a sophomore studying finance. She helps with dynaMIT's finances and helps plan the curriculum.</p>
-									<ul class="actions">
-										<li><a href="#" class="button">Full Story</a></li>
-									</ul>
 								</article>
 								<article>
 									<header>
@@ -158,9 +132,6 @@
 									</header>
 									<a href="#" class="image fit"><img src="{{url_for('static', filename='images/sope.jpg')}}" alt="" /></a>
 									<p>Sope is a junior studying mechanical engineering. He helps plan dynaMIT's curriculum.</p>
-									<ul class="actions">
-										<li><a href="#" class="button">Full Story</a></li>
-									</ul>
 								</article>
 								<article>
 									<header>
@@ -170,9 +141,6 @@
 									</header>
 									<a href="#" class="image fit"><img src="{{url_for('static', filename='images/andy.jpg')}}" alt="" /></a>
 									<p>Andy is a junior studying computer science. He helps plan dynaMIT's curriculum as well as maintain the website.</p>
-									<ul class="actions">
-										<li><a href="#" class="button">Full Story</a></li>
-									</ul>
 								</article>
 								<article>
 									<header>
@@ -182,9 +150,6 @@
 									</header>
 									<a href="#" class="image fit"><img src="{{url_for('static', filename='images/angel.jpg')}}" alt="" /></a>
 									<p>Angel is a freshman studying bioengineering. She helps plan dynaMIT's curriculum.</p>
-									<ul class="actions">
-										<li><a href="#" class="button">Full Story</a></li>
-									</ul>
 								</article>
 								<article>
 									<header>
@@ -194,9 +159,6 @@
 									</header>
 									<a href="#" class="image fit"><img src="{{url_for('static', filename='images/addie.jpg')}}" alt="" /></a>
 									<p>Addie is a sophomore studying architecture and computer science. She helps plan dynaMIT's curriculum as well as maintain the website.</p>
-									<ul class="actions">
-										<li><a href="#" class="button">Full Story</a></li>
-									</ul>
 								</article>
 								<article>
 									<header>
@@ -206,9 +168,6 @@
 									</header>
 									<a href="#" class="image fit"><img src="{{url_for('static', filename='images/chiaki.jpg')}}" alt="" /></a>
 									<p>Chiaki is a sophomore studying mechanical engineering. She helps plan dynaMIT's curriculum.</p>
-									<ul class="actions">
-										<li><a href="#" class="button">Full Story</a></li>
-									</ul>
 								</article>
 								<article>
 									<header>
@@ -218,9 +177,6 @@
 									</header>
 									<a href="#" class="image fit"><img src="{{url_for('static', filename='images/julia.jpg')}}" alt="" /></a>
 									<p>Julia is a sophomore studying biology. She helps plan dynaMIT's curriculum. In her free time she competes as a member of the MIT Sailing Team.</p>
-									<ul class="actions">
-										<li><a href="#" class="button">Full Story</a></li>
-									</ul>
 								</article>
 								<article>
 									<header>
@@ -229,10 +185,7 @@
 										</a></h2>
 									</header>
 									<a href="#" class="image fit"><img src="{{url_for('static', filename='images/alice.jpg')}}" alt="" /></a>
-									<p>Alice is a junior studying computer science. She helps plan dynaMIT's curriculum.</p>
-									<ul class="actions">
-										<li><a href="#" class="button">Full Story</a></li>
-									</ul>
+									<p>Alice is a sophomore studying biology and management. She helps plan dynaMIT's curriculum.</p>
 								</article>
 								<article>
 									<header>
@@ -241,10 +194,7 @@
 										</a></h2>
 									</header>
 									<a href="#" class="image fit"><img src="{{url_for('static', filename='images/nathan.jpg')}}" alt="" /></a>
-									<p>Nathan is a sophomore studying computer science. He helps plan dynaMIT's curriculum.</p>
-									<ul class="actions">
-										<li><a href="#" class="button">Full Story</a></li>
-									</ul>
+									<p>Nathan is a freshman studying biological engineering. He helps plan dynaMIT's curriculum.</p>
 								</article>
 								<article>
 									<header>
@@ -253,10 +203,7 @@
 										</a></h2>
 									</header>
 									<a href="#" class="image fit"><img src="{{url_for('static', filename='images/meghana.jpg')}}" alt="" /></a>
-									<p>Meghana is a sophomore studying computer science. She helps plan dynaMIT's curriculum.</p>
-									<ul class="actions">
-										<li><a href="#" class="button">Full Story</a></li>
-									</ul>
+									<p>Meghana is a freshman studying computer science and molecular biology. She helps plan dynaMIT's curriculum.</p>
 								</article>
 
 

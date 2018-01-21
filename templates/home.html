@@ -17,16 +17,16 @@
 
 				<!-- Header -->
 					<header id="header">
-						<a href="index.html" class="logo">About DYNAMIT</a>
+						<a href="index.html" class="logo">Welcome to DynaMIT</a>
 					</header>
 
 				<!-- Nav -->
 					<nav id="nav">
 						<ul class="links">
 							<li class="active"><a href="{{url_for('index') }}">Home</a></li>
+							<li><a href="{{ url_for('about')  }}">About</a></li>
 							<li><a href="{{  url_for('generic')  }}">Board</a></li>
 							<li><a href="{{ url_for('elements')  }}">Donate</a></li>
-							<li><a href="{{ url_for('about')  }}">About</a></li>
 							<li><a href="{{ url_for('apply')  }}">Apply</a></li>
 						</ul>
 						<ul class="icons">
@@ -41,24 +41,15 @@
 					<div id="main">
 
 						<!-- Featured Post -->
-							<article class="post featured">
+							<section class="post">
 								<header class="major">
-									<!--span class="date">April 25, 2017</span-->
-									<h2><a href="#">What is dynaMIT?</a></h2>
-									<p>We are a completely free, week-long summer day program <br />
-									held at the MIT campus for students in 6th to 9th grade.<br />
-									We teach a variety of topics, ranging from chemistry and
-									<br />
-									biology to physics, music, and computer science. <br/>
-									Read about our mission and how you can apply!
-
-								</p>
+									<h1>Hello there!</h1>
 								</header>
-								<!--a href="#" class="image main"><img src="images/pic01.jpg" alt="" /></a>
-								<ul class="actions">
-									<li><a href="#" class="button big">Full Story</a></li>
-								</ul-->
-							</article>
+
+								<!-- Text stuff -->
+									<p>	Welcome to dynaMIT! We are a decade-old, STEM outreach program for middle school students in the Boston area. Our goal is to share our excitement for STEM with our students, all the while giving them opportunities to explore different fields through challenging activities and experiments. We hope to “ignite” their minds and inspire them to explore beyond this summer! </br></br>Every week for an entire year, our board meets to plan for our summer programs. We work all year long to ensure that our program is completely free, safe, and fun for students. From writing and testing experiments to reading applications and applying for grants, we work as a team to make this program a reality. We are honored to be a part of a group that exemplifies advancing knowledge in areas of scholarship that will best serve the next generation of students. </br></br> We invite you to take a look around our website and learn more about dynaMIT!</br></br>Sincerely, </br>Kelvin Lu and Nan Tian </br>dynaMIT Directors
+
+							</section>
 
 						<!-- Posts -->
 							<section class="posts">
@@ -71,7 +62,7 @@
 									<a href="#" class="image fit"><img src="{{ url_for('static', filename='images/test1.jpg') }}" alt="" /></a>
 									<p>Our mission is to provide students from low-income families with an opportunity to explore and experience science and engineering through hands-on experiments and challenges with their peers.</p>
 									<ul class="actions">
-										<li><a href="{{ url_for('about') }}" class="button">Learn About Us!</a></li>
+										<li><a href="{{ url_for('about') }}" class="button">Learn More About Us!</a></li>
 									</ul>
 								</article>
 								<article>

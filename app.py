@@ -16,15 +16,15 @@ app.config.from_envvar('FLASKR_SETTINGS', silent=True)
 
 @app.route('/')
 def index():
-    return render_template('index.html')
+    return render_template('home.html')
 
 @app.route('/generic')
 def generic():
-	return render_template('generic.html')
+	return render_template('board.html')
 
 @app.route('/elements')
 def elements():
-	return render_template('elements.html')
+	return render_template('donate.html')
 
 @app.route('/apply')
 def apply():
@@ -33,3 +33,6 @@ def apply():
 @app.route('/about')
 def about():
 	return render_template('about.html')
+
+if __name__ == '__main__':
+    app.run(debug=True)
