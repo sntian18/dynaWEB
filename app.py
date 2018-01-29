@@ -1,6 +1,7 @@
 # all the imports
 import os
 import sqlite3
+import smtplib
 from flask import Flask, request, session, g, redirect, url_for, abort, \
      render_template, flash
 
@@ -14,6 +15,7 @@ app.config.update(dict(
 ))
 app.config.from_envvar('FLASKR_SETTINGS', silent=True)
 
+#views
 @app.route('/')
 def index():
     return render_template('home.html')
@@ -33,6 +35,18 @@ def apply():
 @app.route('/about')
 def about():
 	return render_template('about.html')
+
+
+#backend for now
+@app.route('/send_email')
+def send_email():
+	server = smtplib.SMTP('smtp.gmail.com', 587)
+	server.starttls()
+	server.login("andytsai14@gmail.com", "mypasswordhaha!")
+	msg = "example dynamit message!"
+	server.sendmail("andytsai14@gmail.com", "jingyuli@mit.edu", msg)
+	server.quit()
+
 
 if __name__ == '__main__':
     app.run(debug=True)
