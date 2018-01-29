@@ -15,7 +15,7 @@ app.config.update(dict(
 ))
 app.config.from_envvar('FLASKR_SETTINGS', silent=True)
 
-#views
+#primary views
 @app.route('/')
 def index():
     return render_template('home.html')
@@ -35,6 +35,24 @@ def apply():
 @app.route('/about')
 def about():
 	return render_template('about.html')
+
+
+#secondary views
+@app.route('/typical_day')
+def typical_day():
+	return render_template('typical_day.html')
+
+@app.route('/outreach')
+def outreach():
+	return render_template('outreach.html')
+
+@app.route('/testimonials')
+def testimonials():
+	return render_template('testimonials.html')
+
+@app.route('/sponsors')
+def sponsors():
+	return render_template('sponsors.html')
 
 
 #backend for now
