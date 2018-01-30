@@ -20,11 +20,11 @@ app.config.from_envvar('FLASKR_SETTINGS', silent=True)
 def index():
     return render_template('home.html')
 
-@app.route('/generic')
+@app.route('/board')
 def generic():
 	return render_template('board.html')
 
-@app.route('/elements')
+@app.route('/donate')
 def elements():
 	return render_template('donate.html')
 
