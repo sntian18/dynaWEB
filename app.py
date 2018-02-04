@@ -60,9 +60,9 @@ def sponsors():
 def send_email():
 	server = smtplib.SMTP('smtp.gmail.com', 587)
 	server.starttls()
-	server.login("andytsai14@gmail.com", "mypasswordhaha!")
+	server.login("dynamit.mit@gmail.com", "Dynamitemail")
 	msg = "example dynamit message!"
-	server.sendmail("andytsai14@gmail.com", "jingyuli@mit.edu", msg)
+	server.sendmail("dynamit.mit@gmail.com", "andytsai14@gmail.com", msg)
 	server.quit()
 
 
